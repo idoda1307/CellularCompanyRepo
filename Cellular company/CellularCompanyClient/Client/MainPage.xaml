@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Client.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Client"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator}, Path=MainVM}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Content="Customer" Command="{Binding NavigateToClient}" HorizontalAlignment="Left" Height="122" Margin="539,59,0,0" VerticalAlignment="Top" Width="424" RenderTransformOrigin="0.861,1.924"/>
+        <Button Content="Lines" Command="{Binding NavigateToLines}" HorizontalAlignment="Left" Height="115" Margin="537,214,0,0" VerticalAlignment="Top" Width="425"/>
+        <Button Content="Simulator" Command="{Binding NavigateToSimulator}" HorizontalAlignment="Left" Height="106" Margin="550,362,0,0" VerticalAlignment="Top" Width="382"/>
+        <Button Content="Payment" Command="{Binding NavigateToPayment}" HorizontalAlignment="Left" Height="131" Margin="558,495,0,0" VerticalAlignment="Top" Width="382"/>
+
+    </Grid>
+</Page>
